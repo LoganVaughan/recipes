@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+</head>
+
+<body>
+    <h1>Collecting Thanksgiving Recipes</h1>
+
+    <form>
+        <label for="email">Your email:</label>
+        <input type="email" id="email" name="email">
+        <br> <br>
+        <label for="date">Today's date:</label>
+        <input type="date" id="date" name="date">
+        <br> <br>
+        <label for="name">Recipe Name:</label>
+        <input type="text" id="name" name="name">
+        <br> <br>
+
+        <p>What ingrediants are in your recipe?</p>
+
+        <input type="checkbox" id="fruit" name="fruit" value="Fruit">
+        <label for="fruit"> Fruit</label><br>
+        <input type="checkbox" id="vegetables" name="vegetables" value="Vegetables">
+        <label for="vegetables"> Vegetables</label><br>
+        <input type="checkbox" id="grains" name="grains" value="Grains">
+        <label for="grains"> Grains</label> <br>
+        <input type="checkbox" id="dairy" name="dairy" value="Dairy">
+        <label for="dairy"> Dairy</label>
+        <br><br>
+
+        <label for="recipeType">What type of recipe is this?</label>
+        <select id="recipeType">
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+            <option value="dessert">Dessert</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Send your Recipe To Us" onclick="buttonClick(event)">
+
+    </form>
+</body>
+
+</html>
